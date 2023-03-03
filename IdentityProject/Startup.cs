@@ -66,7 +66,7 @@ namespace IdentityProject
                      ValidateAudience = true,
                      ValidateLifetime = true,
                      ValidIssuer = Configuration["JWT:Issuer"],
-                     ValidAudience = Configuration["JWT:Audiences"],
+                     ValidAudience = Configuration["JWT:Audience"],
                      IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"]))
                  };
              });
